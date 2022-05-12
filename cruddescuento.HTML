@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="diseño encabezado DISEÑO DESCUENTO.css">
+  <link rel="stylesheet" href="diseño parte inferior DISEÑO DESCUENTO.css">
+  <link rel="stylesheet" href="diseño CRUD DESCUENTO.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Actualizar producto | ADMIN </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <header class="main-header">
+    <div class="main-header__logo">
+        <img src="logo.jpg" width="350" height="200" alt="">
+    </div>
+    <div class="container">
+        <div class="main-header__container">
+            <h1 class="main-header__title">PET SHOP</h1>
+        </div>
+        <div class="main-header__container">
+            <p class="main-header__txt">Necesitas Ayuda <br> <i class="icon-phone fa-solid fa-phone"></i> Llamar +5626654852</p>
+        </div>
+        <div class="main-header__container">
+          <input type="search" class="main-header__input" placeholder="Buscar Productos"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="inicios.html"class="main-header__btnIn" >Iniciar Sesión <i  class="fa-solid fa-user"></i></a>
+          
+        </div>
+    </div>
+</header>
+  <nav class="main-nav">
+    <ul id="main-menu" class="main-menu">
+      <li class="main-menu__item">
+        <a href="paginaprincipaladmin.html" class="main-menu__link">Inicio</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="main-menu__link">Perros</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="main-menu__link">Gatos</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#Nosotras" class="main-menu__link">Nosotras</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#Contacto" class="main-menu__link">Contacto</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="cruddescuento.HTML" class="main-menu__link">Actualizar Productos</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="crudproductos.HTML" class="main-menu__link">Agregar Productos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="TODO">
+    <form class="row g-3" id="formulario">
+      <div class="col-md-4" id="formulariocss">
+        <label for="validationDefault01" class="form-label">Nombre Producto</label>
+        <input type="text" class="form-control" id="np" value="" >
+        <img src="valido.jpeg" alt="" id="valido">
+        
+        
+      </div>
+      <div class="col-md-4" id="formulariocss">
+        <label for="validationDefault02" class="form-label">Precio neto</label>
+        <input type="number" class="form-control" id="preciopro" placeholder="$" >
+        <img src="valido.jpeg" alt="" id="valido2">
+        
+      </div>
+      <div class="col-md-4" id="formulariocss" >
+        <label for="validationDefaultUsername" class="form-label">ID Producto</label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">#</span>
+          <input type="number" class="form-control" id="idproducto" aria-describedby="inputGroupPrepend2">
+          
+            
+            
+        </div>
+        <img src="valido.jpeg" alt="" id="valido3">
+      </div>
+      <div class="col-md-6" id="formulariocss" >
+        <label for="validationDefault03" class="form-label">% Descuento</label>
+        <input type="number" class="form-control" id="descuentopro" >
+        <img src="valido.jpeg" alt="" id="valido4">
+        
+
+        <div class="col-12" id="formulariocss">
+          <button class="btn btn-primary" type="submit">Agregar producto</button>
+          <div id="error" class="alert alert-danger" role="alert"> </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+<script src="validacionjavascricrudproducto.js"></script>
+  <div class="Limite">
+
+  </div>
+  <div id="Limite">
+
+  </div>
+  <footer class="main-footer">
+    <div class="footer__section">
+      <h2 id="Nosotras" class="footer__title">Sobre Nosotras</h2>
+      <p class="footer__txt">Somos una pequeña Pyme conformada por un grupo de amigas que empezó
+        con la venta de accesorios para mascotas con el fin de ayudar a una fundación sin fines de lucro.
+        Todo esto empezó con ventas por medio de redes sociales, y Gracias al apoyo y la cantidad de compras
+        decidimos expandirnos mediante esta pagina, para así también dar mayor formalidad a nuestras ventas, comodidad y
+        orden para el cliente.
+      </p>
+    </div>
+    <div class="footer__section">
+      <h2 class="footer__title">Ubicación</h2>
+      <p class="footer__txt">Melipilla.........</p>
+      <h2 id="Contacto" class="footer__title">Contacto</h2>
+      <p class="footer__txt">Telefono: +5626654852 </p>
+      <p class="footer__txt">Gmail: Pet.Shop_Melipilla@gmail.com</p>
+    </div>
+    <div class="footer__section">
+      <h2 class="footer__title">Enlaces Rápidos</h2>
+      <a href="#" class="footer__link">Inicio</a></p>
+      <a href="#" class="footer__link">Perros</a></p>
+      <a href="#" class="footer__link">Gatos</a></p>
+      <a href="#Contacto" class="footer__link">Contacto</a></p>
+    </div>
+   
+    <div class="redes-container">
+      <ul>
+        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+
+
+</html>

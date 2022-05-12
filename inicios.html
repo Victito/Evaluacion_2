@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Inicio sesion</h2>
+        </div>
+        <form id="form" action="index.html" class="form">
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="@email.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <input type="button" value="Ingresar" class="btn" onclick= "checkInputs()">
+            <p>¿Aun no tienes cuenta?<a class="link" href="registro.html"> Registrarse</a></p>
+            <p>Iniciar sesion como admin<a class="link" href="inicioadmin.html"> Click Aquí</a></p>
+        </form>
+    </div>
+    <script src="incs.js"></script>
+</body>
+</html>
+</body>
+</html>
